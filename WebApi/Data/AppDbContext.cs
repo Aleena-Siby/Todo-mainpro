@@ -9,6 +9,8 @@ public class AppDbContext : DbContext
 {
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-    public DbSet<TaskItem> TaskItem { get; set; }  // Define your DbSets here
+    public DbSet<TaskItem> TaskItem { get; set; }  
+    public DbSet<AppUser> User{ get;set; }
+    // Define your DbSets here
 }
 }
